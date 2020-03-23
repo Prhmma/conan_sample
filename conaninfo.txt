@@ -1,0 +1,41 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.exception=seh
+    compiler.libcxx=libstdc++11
+    compiler.threads=win32
+    compiler.version=8.1
+    os=Windows
+
+[requires]
+    cmake_installer/1.Y.Z
+    mingw_installer/1.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    arch_build=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.exception=seh
+    compiler.libcxx=libstdc++11
+    compiler.threads=win32
+    compiler.version=8.1
+    os=Windows
+    os_build=Windows
+
+[full_requires]
+    cmake_installer/1.0@conan/stable:5ddd3ba1a7a84a3bce35fffef2908c6e1912429e
+    mingw_installer/1.0@conan/stable:675dbe7ad5e948fbf5905158aee1ca957a448489
+
+[full_options]
+    cmake_installer:version=3.16.3
+
+[recipe_hash]
+
+
+[env]
+

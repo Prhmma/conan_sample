@@ -1,0 +1,3 @@
+[requires]
+cmake_installer/1.0@conan/stable
+mingw_installer/1.0@conan/stable

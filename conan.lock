@@ -1,0 +1,33 @@
+{
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.exception=seh\ncompiler.libcxx=libstdc++11\ncompiler.threads=win32\ncompiler.version=8.1\nos=Windows\nos_build=Windows\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "pref": null,
+    "options": "cmake_installer:version=3.16.3",
+    "requires": [
+     "1",
+     "2"
+    ],
+    "path": "E:\\Bosch\\conanfile.txt"
+   },
+   "1": {
+    "pref": "cmake_installer/1.0@conan/stable#0:5ddd3ba1a7a84a3bce35fffef2908c6e1912429e#0",
+    "options": "version=3.16.3"
+   },
+   "2": {
+    "pref": "mingw_installer/1.0@conan/stable#0:675dbe7ad5e948fbf5905158aee1ca957a448489#80f80e5e47be5afa3ec8a9b7d94ab326",
+    "options": "",
+    "modified": "built",
+    "build_requires": [
+     "3"
+    ]
+   },
+   "3": {
+    "pref": "7z_installer/1.0@conan/stable#0:60b04a80ac4dd5c23f1acffacc679e9902e636e5#0",
+    "options": ""
+   }
+  }
+ },
+ "version": "0.3"
+}

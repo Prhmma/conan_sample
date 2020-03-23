@@ -1,0 +1,14 @@
+{
+ "options": [
+  [
+   "cmake_installer:version",
+   "3.16.3"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
