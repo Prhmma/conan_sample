@@ -17,9 +17,10 @@
                 "kind":"build",
                 "isDefault": true
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": ["absolute"]
+            },
             "isBackground": true
         },
         {
@@ -36,7 +37,7 @@
         {
             "label": "conan",
             "type": "shell",
-            "command": "conan install ."
+            "command": "conan install . --build missing"
         },
         {
             "label": "cmake",
@@ -45,9 +46,10 @@
                 "cwd": "${workspaceRoot}/build"
             },
             "command": "cmake ../src -G Ninja ",
-            "problemMatcher": [
-                "$gcc"
-            ],
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": ["absolute"]
+            },
             "group": "build"
         }
     ]
