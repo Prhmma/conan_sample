@@ -1,3 +1,0 @@
-[requires]
-CMake/3.3.2@rr/stable
-mingw_installer/1.0@conan/stable

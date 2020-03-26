@@ -1,0 +1,3 @@
+digraph {
+    "conanfile.py" -> {"CMake/3.3.2@epen/stable" "mingw/7.1.0@epen/stable"}
+}

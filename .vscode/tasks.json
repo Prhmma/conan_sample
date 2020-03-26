@@ -10,7 +10,7 @@
             "dependsOn": [
                 "mkdir",
                 "conan",
-                "cmake"
+                "activate"
             ],
             "dependsOrder": "sequence",
             "group": {
@@ -40,17 +40,21 @@
             "command": "conan install . --build missing"
         },
         {
-            "label": "cmake",
+            "label": "activate",
             "type": "shell",
-            "options": {
-                "cwd": "${workspaceRoot}/build"
+            "linux": {
+                "command": "../activate.sh; cmake ../src -GNinja; ninja"
             },
-            "command": "cmake ../src -G Ninja ",
-            "problemMatcher": {
-                "base": "$gcc",
-                "fileLocation": ["absolute"]
-            },
-            "group": "build"
-        }
+            "windows": {
+                "command": "..\\activate.ps1 ; cmake ..\\src -GNinja; ninja",
+                "group": {
+                  "kind": "build",
+                  "isDefault": true
+                },
+                "options": {
+                  "cwd": "${workspaceFolder}\\build"
+                }
+            }
+        }        
     ]
 }
